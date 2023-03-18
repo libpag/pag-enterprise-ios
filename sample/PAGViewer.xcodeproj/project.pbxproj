@@ -1,0 +1,959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D72AC7022C1071600C60D04 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2ED88B01FCBEDF100555707 /* main.mm */; };
+		4D72AC7522C1071600C60D04 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2ED88A21FCBEDF100555707 /* AppDelegate.mm */; };
+		4D72AC7F22C1071600C60D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2ED88AA1FCBEDF100555707 /* Assets.xcassets */; };
+		4D72AC8122C1071600C60D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2ED88A71FCBEDF100555707 /* Main.storyboard */; };
+		4DE99A4E27BFC16F0003AA0A /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE99A4827BFC16F0003AA0A /* BackgroundView.m */; };
+		4DE99A4F27BFC16F0003AA0A /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE99A4827BFC16F0003AA0A /* BackgroundView.m */; };
+		4DE99A5027BFC16F0003AA0A /* PAGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE99A4927BFC16F0003AA0A /* PAGPlayerView.m */; };
+		4DE99A5127BFC16F0003AA0A /* PAGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE99A4927BFC16F0003AA0A /* PAGPlayerView.m */; };
+		4DE99A5227BFC16F0003AA0A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DE99A4C27BFC16F0003AA0A /* ViewController.mm */; };
+		4DE99A5327BFC16F0003AA0A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DE99A4C27BFC16F0003AA0A /* ViewController.mm */; };
+		67008B5C29C45052006D9E96 /* 3D_BOX_encrypted.pag in Resources */ = {isa = PBXBuildFile; fileRef = 67008B5B29C45052006D9E96 /* 3D_BOX_encrypted.pag */; };
+		67B9AB6F29ADDEE4003F61E5 /* demo.license in Resources */ = {isa = PBXBuildFile; fileRef = 67B9AB6E29ADDEE4003F61E5 /* demo.license */; };
+		67B9AB7329ADEA44003F61E5 /* sizhi.pag in Resources */ = {isa = PBXBuildFile; fileRef = 67B9AB7229ADEA44003F61E5 /* sizhi.pag */; };
+		67B9AB7529ADEA48003F61E5 /* audio.pag in Resources */ = {isa = PBXBuildFile; fileRef = 67B9AB7429ADEA48003F61E5 /* audio.pag */; };
+		67B9AB7729ADF7EE003F61E5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B9AB7629ADF7EE003F61E5 /* MobileCoreServices.framework */; };
+		67B9AB7929ADFC2D003F61E5 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B9AB7829ADFC2D003F61E5 /* PhotosUI.framework */; };
+		A67EEDC5B348A2EAF72AF1B0 /* Pods_PAGViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AA3F93E9E00E33F9EB7662 /* Pods_PAGViewer.framework */; };
+		B64195FB0394E72A513295F3 /* Pods_PAGViewerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3047045721407A204D7C3BE1 /* Pods_PAGViewerTest.framework */; };
+		F2ED88A31FCBEDF100555707 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2ED88A21FCBEDF100555707 /* AppDelegate.mm */; };
+		F2ED88A91FCBEDF100555707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2ED88A71FCBEDF100555707 /* Main.storyboard */; };
+		F2ED88AB1FCBEDF100555707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2ED88AA1FCBEDF100555707 /* Assets.xcassets */; };
+		F2ED88B11FCBEDF100555707 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2ED88B01FCBEDF100555707 /* main.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3047045721407A204D7C3BE1 /* Pods_PAGViewerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PAGViewerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		318C40C62F781A9F5F8DD7D0 /* Pods-PAGViewerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewerTest/Pods-PAGViewerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		382C49D8F87E5B9D940647B3 /* Pods-PAGViewerSlim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewerSlim.release.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewerSlim/Pods-PAGViewerSlim.release.xcconfig"; sourceTree = "<group>"; };
+		4D3B24C424051D4C0044EA7D /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		4D72AC9B22C1071600C60D04 /* PAGViewerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAGViewerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA8173F2411FA1000C4FBB3 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = PAGViewer/FFmpeg/lib/libavutil.a; sourceTree = "<group>"; };
+		4DA817402411FA1000C4FBB3 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = PAGViewer/FFmpeg/lib/libavcodec.a; sourceTree = "<group>"; };
+		4DA817412411FA1000C4FBB3 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = PAGViewer/FFmpeg/lib/libavdevice.a; sourceTree = "<group>"; };
+		4DA817422411FA1000C4FBB3 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = PAGViewer/FFmpeg/lib/libswscale.a; sourceTree = "<group>"; };
+		4DA817432411FA1000C4FBB3 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = PAGViewer/FFmpeg/lib/libavfilter.a; sourceTree = "<group>"; };
+		4DA817442411FA1000C4FBB3 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = PAGViewer/FFmpeg/lib/libavformat.a; sourceTree = "<group>"; };
+		4DA817452411FA1000C4FBB3 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = PAGViewer/FFmpeg/lib/libswresample.a; sourceTree = "<group>"; };
+		4DA8174E2411FA5900C4FBB3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4DA817502411FA6100C4FBB3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		4DA817522411FA7200C4FBB3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4DA817542411FB9300C4FBB3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4DA817562411FBA000C4FBB3 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		4DE99A4827BFC16F0003AA0A /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		4DE99A4927BFC16F0003AA0A /* PAGPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAGPlayerView.m; sourceTree = "<group>"; };
+		4DE99A4A27BFC16F0003AA0A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4DE99A4B27BFC16F0003AA0A /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		4DE99A4C27BFC16F0003AA0A /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		4DE99A4D27BFC16F0003AA0A /* PAGPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAGPlayerView.h; sourceTree = "<group>"; };
+		52E388B434A077E5A9820A34 /* Pods-PAGViewer.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewer.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewer/Pods-PAGViewer.dailybuild.xcconfig"; sourceTree = "<group>"; };
+		5478FF75278EFE3700999C9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67008B5B29C45052006D9E96 /* 3D_BOX_encrypted.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3D_BOX_encrypted.pag; sourceTree = "<group>"; };
+		676EEF7C29B9BE1F00F01D7B /* ffmovie.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ffmovie.xcframework; path = ../vendor/ffmovie/ios/ffmovie.xcframework; sourceTree = "<group>"; };
+		67B9AB6E29ADDEE4003F61E5 /* demo.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.license; sourceTree = "<group>"; };
+		67B9AB7229ADEA44003F61E5 /* sizhi.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = sizhi.pag; sourceTree = "<group>"; };
+		67B9AB7429ADEA48003F61E5 /* audio.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio.pag; sourceTree = "<group>"; };
+		67B9AB7629ADF7EE003F61E5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		67B9AB7829ADFC2D003F61E5 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		6B2A288297268E24DCC4516D /* Pods-PAGViewerSlim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewerSlim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewerSlim/Pods-PAGViewerSlim.debug.xcconfig"; sourceTree = "<group>"; };
+		6C4102B884D6DDD8E3A0F534 /* Pods-PAGViewerTest.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewerTest.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewerTest/Pods-PAGViewerTest.dailybuild.xcconfig"; sourceTree = "<group>"; };
+		98432DAA6D4ED2A49C4A7CF3 /* Pods-PAGViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewer/Pods-PAGViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		A8557BF7F6FC0F2EF35B7AF6 /* Pods-PAGViewerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewerTest/Pods-PAGViewerTest.release.xcconfig"; sourceTree = "<group>"; };
+		B1AA3F93E9E00E33F9EB7662 /* Pods_PAGViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PAGViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B210DD2408423737202A8A22 /* Pods-PAGViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewer/Pods-PAGViewer.release.xcconfig"; sourceTree = "<group>"; };
+		D1A43A35504DA90091CE5E80 /* Pods-PAGViewerSlim.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewerSlim.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewerSlim/Pods-PAGViewerSlim.dailybuild.xcconfig"; sourceTree = "<group>"; };
+		F2ED889E1FCBEDF100555707 /* PAGViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAGViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2ED88A11FCBEDF100555707 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2ED88A21FCBEDF100555707 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		F2ED88A81FCBEDF100555707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2ED88AA1FCBEDF100555707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2ED88B01FCBEDF100555707 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D72AC7622C1071600C60D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64195FB0394E72A513295F3 /* Pods_PAGViewerTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2ED889B1FCBEDF100555707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B9AB7729ADF7EE003F61E5 /* MobileCoreServices.framework in Frameworks */,
+				67B9AB7929ADFC2D003F61E5 /* PhotosUI.framework in Frameworks */,
+				A67EEDC5B348A2EAF72AF1B0 /* Pods_PAGViewer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		316F40AF2C523E86F187EA4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				676EEF7C29B9BE1F00F01D7B /* ffmovie.xcframework */,
+				67B9AB7829ADFC2D003F61E5 /* PhotosUI.framework */,
+				67B9AB7629ADF7EE003F61E5 /* MobileCoreServices.framework */,
+				4DA817562411FBA000C4FBB3 /* VideoToolbox.framework */,
+				4DA817542411FB9300C4FBB3 /* AudioToolbox.framework */,
+				4DA817522411FA7200C4FBB3 /* CoreMedia.framework */,
+				4DA817502411FA6100C4FBB3 /* libiconv.tbd */,
+				4DA8174E2411FA5900C4FBB3 /* libz.tbd */,
+				4DA817402411FA1000C4FBB3 /* libavcodec.a */,
+				4DA817412411FA1000C4FBB3 /* libavdevice.a */,
+				4DA817432411FA1000C4FBB3 /* libavfilter.a */,
+				4DA817442411FA1000C4FBB3 /* libavformat.a */,
+				4DA8173F2411FA1000C4FBB3 /* libavutil.a */,
+				4DA817452411FA1000C4FBB3 /* libswresample.a */,
+				4DA817422411FA1000C4FBB3 /* libswscale.a */,
+				4D3B24C424051D4C0044EA7D /* libbz2.tbd */,
+				B1AA3F93E9E00E33F9EB7662 /* Pods_PAGViewer.framework */,
+				3047045721407A204D7C3BE1 /* Pods_PAGViewerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DE99A3B27BFC1120003AA0A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4DE99A4B27BFC16F0003AA0A /* BackgroundView.h */,
+				4DE99A4827BFC16F0003AA0A /* BackgroundView.m */,
+				4DE99A4D27BFC16F0003AA0A /* PAGPlayerView.h */,
+				4DE99A4927BFC16F0003AA0A /* PAGPlayerView.m */,
+				4DE99A4A27BFC16F0003AA0A /* ViewController.h */,
+				4DE99A4C27BFC16F0003AA0A /* ViewController.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		545B97A4278F0AF400A0112E /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		67B9AB6D29ADDBEB003F61E5 /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				67008B5B29C45052006D9E96 /* 3D_BOX_encrypted.pag */,
+				67B9AB7229ADEA44003F61E5 /* sizhi.pag */,
+				67B9AB6E29ADDEE4003F61E5 /* demo.license */,
+				67B9AB7429ADEA48003F61E5 /* audio.pag */,
+			);
+			path = asset;
+			sourceTree = SOURCE_ROOT;
+		};
+		BA724F4DB5EC6E43090B0F9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				318C40C62F781A9F5F8DD7D0 /* Pods-PAGViewerTest.debug.xcconfig */,
+				A8557BF7F6FC0F2EF35B7AF6 /* Pods-PAGViewerTest.release.xcconfig */,
+				6C4102B884D6DDD8E3A0F534 /* Pods-PAGViewerTest.dailybuild.xcconfig */,
+				6B2A288297268E24DCC4516D /* Pods-PAGViewerSlim.debug.xcconfig */,
+				382C49D8F87E5B9D940647B3 /* Pods-PAGViewerSlim.release.xcconfig */,
+				D1A43A35504DA90091CE5E80 /* Pods-PAGViewerSlim.dailybuild.xcconfig */,
+				98432DAA6D4ED2A49C4A7CF3 /* Pods-PAGViewer.debug.xcconfig */,
+				B210DD2408423737202A8A22 /* Pods-PAGViewer.release.xcconfig */,
+				52E388B434A077E5A9820A34 /* Pods-PAGViewer.dailybuild.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2ED88951FCBEDF100555707 = {
+			isa = PBXGroup;
+			children = (
+				F2ED88A01FCBEDF100555707 /* PAGViewer */,
+				F2ED889F1FCBEDF100555707 /* Products */,
+				BA724F4DB5EC6E43090B0F9A /* Pods */,
+				316F40AF2C523E86F187EA4A /* Frameworks */,
+				545B97A4278F0AF400A0112E /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		F2ED889F1FCBEDF100555707 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2ED889E1FCBEDF100555707 /* PAGViewer.app */,
+				4D72AC9B22C1071600C60D04 /* PAGViewerTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2ED88A01FCBEDF100555707 /* PAGViewer */ = {
+			isa = PBXGroup;
+			children = (
+				67B9AB6D29ADDBEB003F61E5 /* asset */,
+				4DE99A3B27BFC1120003AA0A /* Classes */,
+				F2ED88A11FCBEDF100555707 /* AppDelegate.h */,
+				F2ED88A21FCBEDF100555707 /* AppDelegate.mm */,
+				F2ED88AA1FCBEDF100555707 /* Assets.xcassets */,
+				5478FF75278EFE3700999C9C /* Info.plist */,
+				F2ED88A71FCBEDF100555707 /* Main.storyboard */,
+				F2ED88B01FCBEDF100555707 /* main.mm */,
+			);
+			path = PAGViewer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D72AC6822C1071600C60D04 /* PAGViewerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D72AC9722C1071600C60D04 /* Build configuration list for PBXNativeTarget "PAGViewerTest" */;
+			buildPhases = (
+				3BE5A48E1284E76D261E6CC8 /* [CP] Check Pods Manifest.lock */,
+				4D72AC6A22C1071600C60D04 /* Sources */,
+				4D72AC7622C1071600C60D04 /* Frameworks */,
+				4D72AC7922C1071600C60D04 /* Resources */,
+				23BB213D5AE72E1A61E52183 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PAGViewerTest;
+			productName = PAGViewer;
+			productReference = 4D72AC9B22C1071600C60D04 /* PAGViewerTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2ED889D1FCBEDF100555707 /* PAGViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2ED88B41FCBEDF100555707 /* Build configuration list for PBXNativeTarget "PAGViewer" */;
+			buildPhases = (
+				23BC8F2E02CA838E45C01DE7 /* [CP] Check Pods Manifest.lock */,
+				F2ED889A1FCBEDF100555707 /* Sources */,
+				F2ED889B1FCBEDF100555707 /* Frameworks */,
+				F2ED889C1FCBEDF100555707 /* Resources */,
+				D20B657698F0E0E9AA5BC038 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PAGViewer;
+			productName = PAGViewer;
+			productReference = F2ED889E1FCBEDF100555707 /* PAGViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2ED88961FCBEDF100555707 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1310;
+				ORGANIZATIONNAME = libpag.org;
+				TargetAttributes = {
+					4D72AC6822C1071600C60D04 = {
+						ProvisioningStyle = Automatic;
+					};
+					F2ED889D1FCBEDF100555707 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F2ED88991FCBEDF100555707 /* Build configuration list for PBXProject "PAGViewer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2ED88951FCBEDF100555707;
+			productRefGroup = F2ED889F1FCBEDF100555707 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2ED889D1FCBEDF100555707 /* PAGViewer */,
+				4D72AC6822C1071600C60D04 /* PAGViewerTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D72AC7922C1071600C60D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D72AC7F22C1071600C60D04 /* Assets.xcassets in Resources */,
+				4D72AC8122C1071600C60D04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2ED889C1FCBEDF100555707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2ED88AB1FCBEDF100555707 /* Assets.xcassets in Resources */,
+				67B9AB7529ADEA48003F61E5 /* audio.pag in Resources */,
+				67B9AB7329ADEA44003F61E5 /* sizhi.pag in Resources */,
+				F2ED88A91FCBEDF100555707 /* Main.storyboard in Resources */,
+				67008B5C29C45052006D9E96 /* 3D_BOX_encrypted.pag in Resources */,
+				67B9AB6F29ADDEE4003F61E5 /* demo.license in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23BB213D5AE72E1A61E52183 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PAGViewerTest/Pods-PAGViewerTest-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FFMovie/FFMovie.framework/FFMovie",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag/libpag.framework/libpag",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFMovie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libpag.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PAGViewerTest/Pods-PAGViewerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23BC8F2E02CA838E45C01DE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PAGViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BE5A48E1284E76D261E6CC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PAGViewerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D20B657698F0E0E9AA5BC038 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PAGViewer/Pods-PAGViewer-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FFMovie/FFMovie.framework/FFMovie",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag/libpag.framework/libpag",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFMovie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libpag.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PAGViewer/Pods-PAGViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D72AC6A22C1071600C60D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D72AC7022C1071600C60D04 /* main.mm in Sources */,
+				4D72AC7522C1071600C60D04 /* AppDelegate.mm in Sources */,
+				4DE99A5327BFC16F0003AA0A /* ViewController.mm in Sources */,
+				4DE99A5127BFC16F0003AA0A /* PAGPlayerView.m in Sources */,
+				4DE99A4F27BFC16F0003AA0A /* BackgroundView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2ED889A1FCBEDF100555707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2ED88B11FCBEDF100555707 /* main.mm in Sources */,
+				F2ED88A31FCBEDF100555707 /* AppDelegate.mm in Sources */,
+				4DE99A5227BFC16F0003AA0A /* ViewController.mm in Sources */,
+				4DE99A5027BFC16F0003AA0A /* PAGPlayerView.m in Sources */,
+				4DE99A4E27BFC16F0003AA0A /* BackgroundView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2ED88A71FCBEDF100555707 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2ED88A81FCBEDF100555707 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D72AC9822C1071600C60D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 318C40C62F781A9F5F8DD7D0 /* Pods-PAGViewerTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = YES;
+				DEVELOPMENT_TEAM = 36588GHG2N;
+				ENABLE_BITCODE = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PAGViewer/Full/PagDecoder",
+					"$(PROJECT_DIR)/PAGViewer/Full/SoftDecoder",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/PAGViewer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/libpag\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-w",
+					"-l\"iconv\"",
+					"-l\"ffmovie\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"VideoToolbox\"",
+					"-framework",
+					"\"libpag\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.pag.viewer.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Debug;
+		};
+		4D72AC9922C1071600C60D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8557BF7F6FC0F2EF35B7AF6 /* Pods-PAGViewerTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tencent Technology (Shenzhen) Co., Ltd";
+				CODE_SIGN_STYLE = Manual;
+				COMPRESS_PNG_FILES = YES;
+				DEVELOPMENT_TEAM = HKB8WPFBR9;
+				ENABLE_BITCODE = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PAGViewer/Full/PagDecoder",
+					"$(PROJECT_DIR)/PAGViewer/Full/SoftDecoder",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/PAGViewer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/libpag\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-w",
+					"-l\"iconv\"",
+					"-l\"ffmovie\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"VideoToolbox\"",
+					"-framework",
+					"\"libpag\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.pag.viewer.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "6937cb36-7509-4db4-bffb-e01d04d49df1";
+				STRIP_PNG_TEXT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Release;
+		};
+		4D72AC9A22C1071600C60D04 /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C4102B884D6DDD8E3A0F534 /* Pods-PAGViewerTest.dailybuild.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tencent Technology (Shenzhen) Co., Ltd";
+				CODE_SIGN_STYLE = Manual;
+				COMPRESS_PNG_FILES = YES;
+				DEVELOPMENT_TEAM = HKB8WPFBR9;
+				ENABLE_BITCODE = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PAGViewer/Full/PagDecoder",
+					"$(PROJECT_DIR)/PAGViewer/Full/SoftDecoder",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/PAGViewer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/libpag\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-w",
+					"-l\"iconv\"",
+					"-l\"ffmovie\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"VideoToolbox\"",
+					"-framework",
+					"\"libpag\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.pag.viewer.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "6937cb36-7509-4db4-bffb-e01d04d49df1";
+				STRIP_PNG_TEXT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = DailyBuild;
+		};
+		4DF487AA2221538D0001C955 /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tencent Technology (Shenzhen) Company Limited (88L2Q4487U)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 88L2Q4487U;
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.libpag;
+				PROVISIONING_PROFILE_SPECIFIER = com.tencent.libpag.build_Development_SignProvision;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES_ERROR;
+			};
+			name = DailyBuild;
+		};
+		4DF487AB2221538D0001C955 /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E388B434A077E5A9820A34 /* Pods-PAGViewer.dailybuild.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PAGViewer/Full/PagDecoder",
+					"$(PROJECT_DIR)/PAGViewer/Full/SoftDecoder",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/PAGViewer/FFmpeg/include",
+					"$(PODS_ROOT)/**",
+				);
+				INFOPLIST_FILE = PAGViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/libpag\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.pag.pagviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = DailyBuild;
+		};
+		F2ED88B21FCBEDF100555707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 36588GHG2N;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = im.pag.viewer;
+				SDKROOT = iphoneos;
+				VALIDATE_WORKSPACE = YES_ERROR;
+			};
+			name = Debug;
+		};
+		F2ED88B31FCBEDF100555707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tencent Technology (Shenzhen) Company Limited (88L2Q4487U)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 88L2Q4487U;
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.libpag;
+				PROVISIONING_PROFILE_SPECIFIER = com.tencent.libpag.build_Development_SignProvision;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES_ERROR;
+			};
+			name = Release;
+		};
+		F2ED88B51FCBEDF100555707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98432DAA6D4ED2A49C4A7CF3 /* Pods-PAGViewer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = YES;
+				DEVELOPMENT_TEAM = A25BQKLXTS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PAGViewer/Full/PagDecoder",
+					"$(PROJECT_DIR)/PAGViewer/Full/SoftDecoder",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/PAGViewer/FFmpeg/include",
+					"$(PODS_ROOT)/**",
+				);
+				INFOPLIST_FILE = PAGViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/libpag\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.libpag.pagviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Debug;
+		};
+		F2ED88B61FCBEDF100555707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B210DD2408423737202A8A22 /* Pods-PAGViewer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = YES;
+				DEVELOPMENT_TEAM = A25BQKLXTS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PAGViewer/Full/PagDecoder",
+					"$(PROJECT_DIR)/PAGViewer/Full/SoftDecoder",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/PAGViewer/FFmpeg/include",
+					"$(PODS_ROOT)/**",
+				);
+				INFOPLIST_FILE = PAGViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/libpag\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.pag.pagviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D72AC9722C1071600C60D04 /* Build configuration list for PBXNativeTarget "PAGViewerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D72AC9822C1071600C60D04 /* Debug */,
+				4D72AC9922C1071600C60D04 /* Release */,
+				4D72AC9A22C1071600C60D04 /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2ED88991FCBEDF100555707 /* Build configuration list for PBXProject "PAGViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2ED88B21FCBEDF100555707 /* Debug */,
+				F2ED88B31FCBEDF100555707 /* Release */,
+				4DF487AA2221538D0001C955 /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2ED88B41FCBEDF100555707 /* Build configuration list for PBXNativeTarget "PAGViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2ED88B51FCBEDF100555707 /* Debug */,
+				F2ED88B61FCBEDF100555707 /* Release */,
+				4DF487AB2221538D0001C955 /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2ED88961FCBEDF100555707 /* Project object */;
+}
