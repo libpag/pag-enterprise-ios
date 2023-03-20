@@ -14,6 +14,10 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks = 'framework/*.xcframework'
 
-  spec.libraries = ["iconv", "z", "c++"]
+  spec.libraries = ["iconv", "compression"]
+
+  spec.xcconfig = {
+   'VALID_ARCHS' =>  'arm64 x86_64'
+  }
 
 end
