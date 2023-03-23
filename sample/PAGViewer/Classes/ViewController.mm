@@ -88,16 +88,37 @@
 * SDK鉴权，建议放在AppDelegate初始化时进行，未鉴权或者鉴权失败会显示水印
 */
 - (void)initSDKAuth {
-    NSString *sdkPath = @"replace your license path";
+    NSString *sdkLicensePath = @"replace your license path";
     NSString *key = @"replace your key";
     NSString *appID = @"replace your app id";
-    PAGLicenseResult result = [PAGLicenseManager LoadSDKLicense:sdkPath key:key appID:appID];
+    // 尝试从网络上更新License。
+    NSURL* downloadUrl = [NSURL URLWithString:@"replace your url"];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:downloadUrl];
+    NSURLSessionConfiguration* configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    configuration.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+    NSURLSessionTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        [data writeToURL:[NSURL fileURLWithPath:sdkLicensePath isDirectory:NO] options:NSDataWritingAtomic error:&error];
+        [PAGLicenseManager LoadSDKLicense:sdkLicensePath key:key appID:appID];
+    }];
+    [dataTask resume];
+    // 同时使用本地路径鉴权
+    PAGLicenseResult result = [PAGLicenseManager LoadSDKLicense:sdkLicensePath key:key appID:appID];
     NSLog(@"onAuthResult result%d", result);
+    if (result == PAGLicenseResultSuccess) {
+        return;
+    }
+
 }
 
 @end
+
+// 导出相关函数方法
 @implementation ViewController (ExportVideo)
 
+/*
+ 创建一个和画面内容一致的PAGComposition。这里不能直接使用PAGView持有的PAGComposition实例，因为同一个PAGComposition不能同时在多个PAGPlayer、PAGView、PAGMovieExporter中使用。
+ */
 - (PAGComposition*)createComposition {
   NSString* pagName = self.pagFileNames[self.pagFileSegmentedControl.selectedSegmentIndex];
   NSString* fileName = [pagName substringToIndex:pagName.length - 4];
@@ -114,6 +135,10 @@
   }
   return file;
 }
+
+/*
+ 点击导出按钮
+ */
 - (IBAction)exportVideo:(UIButton*)sender {
   if (self.exportSession != nil) {
     [self.exportSession cancel];
@@ -139,10 +164,13 @@
   }
 }
 
+/// PAGMovieExporter的进度回调，回调在主线程
 - (void)onProgress:(CGFloat)progress {
   [self.exportProgressView setProgress:progress];
 }
 
+
+/// PAGMovieExporter的状态回调，回调在主线程
 - (void)onStatusChange:(PAGExportStatus)status msgs:(NSArray<NSString*>*)msgs {
   if (status == PAGExportStatusComplete || status == PAGExportStatusFailed ||
       status == PAGExportStatusCanceled) {
@@ -150,6 +178,7 @@
     self.exportProgressView = nil;
     self.exportSession = nil;
   }
+  // 弹出提示框
   if (status == PAGExportStatusComplete) {
     UIAlertController* alert =
         [UIAlertController alertControllerWithTitle:@"导出结束"
@@ -163,6 +192,8 @@
   }
 }
 
+
+///  导出进度UI
 - (void)initProgressView {
   if (self.exportProgressView != nil) {
     return;
@@ -180,6 +211,9 @@
 
 @implementation ViewController (MovieReplace)
 
+/*
+ 点击替换视频按钮
+ */
 - (IBAction)replaceImage:(UIButton *)sender {
     if (@available(iOS 14, *)) {
         PHPickerConfiguration *configuration = [PHPickerConfiguration new];
@@ -208,7 +242,9 @@
     NSString *fileName = [url lastPathComponent];
     NSURL *newURL = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingString:fileName]];
     NSError *error;
+    // 拷贝文件到本地
     [[NSFileManager defaultManager] copyItemAtURL:url toURL:newURL error:&error];
+    // 替换图片
     [self.playerView replaceMovie:@[newURL.path]];
 }
 
@@ -230,6 +266,7 @@
                 if (error != nil) {
                     errorSize++;
                 } else {
+                    // 拷贝文件到本地
                     NSString *fileName = [url lastPathComponent];
                     NSURL *newURL = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingString:fileName]];
                     [[NSFileManager defaultManager] copyItemAtURL:url toURL:newURL error:nil];
@@ -240,6 +277,7 @@
                         [indicator stopAnimating];
                         [indicator removeFromSuperview];
                         self.replaceMovies = array;
+                        // 替换图片
                         [self.playerView replaceMovie:array];
                     });
                 }
