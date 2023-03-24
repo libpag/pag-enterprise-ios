@@ -20,13 +20,18 @@ PAG_API @interface PAGMovie : PAGImage
 
 /**
  * Creates a PAGMovie from the video path, Return null if the file doesn't exist, or it isn't a
- * valid video file, Only supports MP4 box and H264/H265.
+ * valid video file.
+ * PAGMovie supports the mov,mp4,m4a,3gp,3g2 and mj2 container formats, and it supports the H264 and H265 encoding formats.
  */
 + (PAGMovie*)MakeFromFile:(NSString*)path;
 
 /**
  * Creates a PAGMovie from the video path, Return null if the file doesn't exist, or it isn't a
  * valid video file，or the start time is more than the origin duration of this movie.
+ * PAGMovie supports the mov,mp4,m4a,3gp,3g2 and mj2 container formats, and it supports the H264 and H265 encoding formats.
+ *
+ * If the duration and startTime are set to -1, the video will use the full length.
+ *
  * @param startTime the start time of the movie in microseconds.
  * @param duration the duration of the movie in microseconds.
  * @param speed the speed of the movie.
