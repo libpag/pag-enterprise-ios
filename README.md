@@ -1,7 +1,7 @@
 # pag-enterprise-ios
 The PAG-Enterprise SDK demo for the iOS platform.
 
-# 工程运行
+# demo 运行
 ```
 git clone https://github.com/libpag/pag-enterprise-ios.git
 cd pag-enterprise-ios
