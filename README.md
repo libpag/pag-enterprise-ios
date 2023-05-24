@@ -1,6 +1,15 @@
 # pag-enterprise-ios
 The PAG-Enterprise SDK demo for the iOS platform.
 
+# 工程运行
+```
+git clone https://github.com/libpag/pag-enterprise-ios.git
+cd pag-enterprise-ios
+git lfs pull
+cd sample
+pod install
+```
+
 # Note
 This repo is for demonstrating how to use the PAG Enterprise SDK only, and it's not actively maintained. Please go to the main repo: [Tencent/libpag](https://github.com/Tencent/libpag) to report issues if you have any problems while using the PAG SDK.
 
