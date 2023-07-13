@@ -4,16 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "libpag-enterprise",
+    name: "libpag",
     platforms: [.iOS(.v9)],
     products: [
         .library(
-            name: "libpag-enterprise",
+            name: "libpag",
             targets: ["libpag-enterprise"]),
     ],
     targets: [
         .binaryTarget(
-            name: "libpag-enterprise",
+            name: "libpag",
             path: "framework/*.xcframework")
     ]
 )
