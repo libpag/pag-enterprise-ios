@@ -4,16 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "libpag",
+    name: "libpag-enterprise",
     platforms: [.iOS(.v9)],
     products: [
         .library(
-            name: "libpag",
-            targets: ["libpag"]),
+            name: "libpag-enterprise",
+            targets: ["libpag-enterprise"]),
     ],
     targets: [
         .binaryTarget(
-            name: "libpag",
-            path: "framework/*.xcframework")
+            name: "libpag-enterprise",
+            path: "framework/libpag.xcframework"),
+         .binaryTarget(
+            name: "ffmovie",
+            path: "framework/FFMovie.xcframework")
     ]
 )
