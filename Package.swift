@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "libpag",
-            targets: ["libpag-enterprise"]),
+            targets: ["libpag"]),
     ],
     targets: [
         .binaryTarget(
