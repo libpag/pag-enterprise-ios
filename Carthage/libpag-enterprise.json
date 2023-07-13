@@ -1,0 +1,5 @@
+{
+  "4.2.100": "https://github.com/Tencent/libpag/releases/download/v4.2.100/libpag_enterprise_4.2.100_ios_arm64_simulator.zip",
+  "4.2.100-movie": "https://github.com/Tencent/libpag/releases/download/v4.2.100/libpag_enterprise_4.2.100_ios_arm64_simulator_movie.zip",
+  "4.2.88-movie": "https://github.com/Tencent/libpag/releases/download/v4.2.88/libpag_enterprise_4.2.88_ios_arm64_simulator_movie.zip"
+}
