@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "libpag-enterprise"
-  spec.version  = '4.3.5-movie'
+  spec.version  = '4.3.5'
   spec.summary      = "libpag-enterprise."
 
   spec.homepage     = "https://github.com/libpag/pag-enterprise-ios"
