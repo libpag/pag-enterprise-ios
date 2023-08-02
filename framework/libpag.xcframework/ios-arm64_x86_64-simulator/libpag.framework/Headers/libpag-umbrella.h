@@ -38,7 +38,6 @@
 #import "PAGLicenseManager.h"
 #import "PAGMovie.h"
 #import "PAGMovieExporter.h"
-#import "PAGView+Audio.h"
 
 FOUNDATION_EXPORT double libpagVersionNumber;
 FOUNDATION_EXPORT const unsigned char libpagVersionString[];
