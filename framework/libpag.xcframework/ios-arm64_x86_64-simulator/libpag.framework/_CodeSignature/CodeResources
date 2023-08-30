@@ -112,13 +112,17 @@
 		<data>
 		hrMEYvEn30rFG7g100qBhVy6pCg=
 		</data>
+		<key>Headers/PAGView+Audio.h</key>
+		<data>
+		zCY5J10AwfnUVsTgTpfVGRKmhOs=
+		</data>
 		<key>Headers/PAGView.h</key>
 		<data>
 		Ksrfzx3H5C/ig8s78hSqXeoMTlc=
 		</data>
 		<key>Headers/libpag-umbrella.h</key>
 		<data>
-		CsFYPgfkRWmWQeO86gq4vSIBo0k=
+		ar+HM8lgx5/UsfKUB4HsPk88tBY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -428,6 +432,17 @@
 			uxWhQyngdrhDJBz14fC3CF7mXvq7OI60pAre9XSPElw=
 			</data>
 		</dict>
+		<key>Headers/PAGView+Audio.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zCY5J10AwfnUVsTgTpfVGRKmhOs=
+			</data>
+			<key>hash2</key>
+			<data>
+			g+1XRV2DJlZAo+X3dmf5nkrclxeygZd1xFgGowJAhuA=
+			</data>
+		</dict>
 		<key>Headers/PAGView.h</key>
 		<dict>
 			<key>hash</key>
@@ -443,11 +458,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CsFYPgfkRWmWQeO86gq4vSIBo0k=
+			ar+HM8lgx5/UsfKUB4HsPk88tBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			NJEoe/rknSykpNufb+Q6ih9NiHMjnsvfi/aLa6odoGI=
+			S1P+nWanG4rmSFcFCBndbXGZgxkkz9AMJOR4QRzbL68=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
