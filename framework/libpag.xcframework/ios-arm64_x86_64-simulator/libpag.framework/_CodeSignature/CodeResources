@@ -116,9 +116,13 @@
 		<data>
 		Ksrfzx3H5C/ig8s78hSqXeoMTlc=
 		</data>
+		<key>Headers/libpag.h</key>
+		<data>
+		o06Hp9coMZtSmV3ghKRHo+rHV24=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		5QjaLu+wllzO5Cp2gMMthl5ralY=
+		avlXc9b/N4a1X9ynE9w7pOnwyf8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -429,6 +433,17 @@
 			<key>hash2</key>
 			<data>
 			g52/dIlpAgTskPYaVIRJuhdgLMzFI3P7yIBdHlWv/fE=
+			</data>
+		</dict>
+		<key>Headers/libpag.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o06Hp9coMZtSmV3ghKRHo+rHV24=
+			</data>
+			<key>hash2</key>
+			<data>
+			X/BKlEEjIt7hmwo5JsVeUxcctJida/HnfHXdxOjs+E4=
 			</data>
 		</dict>
 	</dict>
