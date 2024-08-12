@@ -112,10 +112,6 @@
 		<data>
 		hrMEYvEn30rFG7g100qBhVy6pCg=
 		</data>
-		<key>Headers/PAGView+Audio.h</key>
-		<data>
-		zCY5J10AwfnUVsTgTpfVGRKmhOs=
-		</data>
 		<key>Headers/PAGView.h</key>
 		<data>
 		Ksrfzx3H5C/ig8s78hSqXeoMTlc=
@@ -426,17 +422,6 @@
 			<key>hash2</key>
 			<data>
 			uxWhQyngdrhDJBz14fC3CF7mXvq7OI60pAre9XSPElw=
-			</data>
-		</dict>
-		<key>Headers/PAGView+Audio.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zCY5J10AwfnUVsTgTpfVGRKmhOs=
-			</data>
-			<key>hash2</key>
-			<data>
-			g+1XRV2DJlZAo+X3dmf5nkrclxeygZd1xFgGowJAhuA=
 			</data>
 		</dict>
 		<key>Headers/PAGView.h</key>
