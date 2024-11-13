@@ -11,6 +11,6 @@ targetsArray.each do |t|
     use_frameworks!
     
     # Pods for PAGViewer
-    pod 'libpag-enterprise',  '4.3.64-movie'
+    pod 'libpag-enterprise',  '4.4.12-movie'
   end
 end
