@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/PAGDecoder.h</key>
 		<data>
-		iycvUyfyMq4r9NcDe4E5rqOmpWo=
+		UErCrad780sSrXH6rt8Y+aqOsu0=
 		</data>
 		<key>Headers/PAGDiskCache.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/PAGImageView.h</key>
 		<data>
-		drNqDXrTEQFAE1zuEBaV54Ufnyo=
+		dSSBCVuUA8jQk9L1ZI/bqaB41eA=
 		</data>
 		<key>Headers/PAGLayer.h</key>
 		<data>
@@ -112,6 +112,10 @@
 		<data>
 		hrMEYvEn30rFG7g100qBhVy6pCg=
 		</data>
+		<key>Headers/PAGView+Audio.h</key>
+		<data>
+		zCY5J10AwfnUVsTgTpfVGRKmhOs=
+		</data>
 		<key>Headers/PAGView.h</key>
 		<data>
 		Ksrfzx3H5C/ig8s78hSqXeoMTlc=
@@ -122,7 +126,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UA6V3gQvfRxlDd09oGpqi2FfUTs=
+		h3aUUf7Sw+pqOk5UnWh4mYsFY8k=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -166,7 +170,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uoP36uOJreBqU7Wzdfvl7iuGt8aqqIbt7MUKsRSfPKE=
+			piLhonsU+oOVsvI9pyBe+vsnc5jhh6X+XpIMyOw6SdQ=
 			</data>
 		</dict>
 		<key>Headers/PAGDiskCache.h</key>
@@ -208,7 +212,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NaHHlhE565SOmyTIPWeOJ11OWAMs3TjF5Mfy7G4kOlU=
+			dRSN6BDZ76pR1a7UujIT+9b0WkVlOHdvgJdwx6ZvJ1A=
 			</data>
 		</dict>
 		<key>Headers/PAGLayer.h</key>
@@ -314,6 +318,13 @@
 			<key>hash2</key>
 			<data>
 			uxWhQyngdrhDJBz14fC3CF7mXvq7OI60pAre9XSPElw=
+			</data>
+		</dict>
+		<key>Headers/PAGView+Audio.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g+1XRV2DJlZAo+X3dmf5nkrclxeygZd1xFgGowJAhuA=
 			</data>
 		</dict>
 		<key>Headers/PAGView.h</key>
