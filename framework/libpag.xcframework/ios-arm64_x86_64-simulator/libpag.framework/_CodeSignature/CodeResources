@@ -112,6 +112,10 @@
 		<data>
 		hrMEYvEn30rFG7g100qBhVy6pCg=
 		</data>
+		<key>Headers/PAGView+Audio.h</key>
+		<data>
+		zCY5J10AwfnUVsTgTpfVGRKmhOs=
+		</data>
 		<key>Headers/PAGView.h</key>
 		<data>
 		Ksrfzx3H5C/ig8s78hSqXeoMTlc=
@@ -122,7 +126,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VJM0WV8TNN1WiOEiIUxoKovSDG8=
+		TQn5lrLIezeU2Tpjj5E0viunlYo=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		8VMV77QzIPomqL0AxBX1f6TVMHY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -316,6 +324,13 @@
 			uxWhQyngdrhDJBz14fC3CF7mXvq7OI60pAre9XSPElw=
 			</data>
 		</dict>
+		<key>Headers/PAGView+Audio.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g+1XRV2DJlZAo+X3dmf5nkrclxeygZd1xFgGowJAhuA=
+			</data>
+		</dict>
 		<key>Headers/PAGView.h</key>
 		<dict>
 			<key>hash2</key>
@@ -328,6 +343,13 @@
 			<key>hash2</key>
 			<data>
 			X/BKlEEjIt7hmwo5JsVeUxcctJida/HnfHXdxOjs+E4=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pG4CkCL18MNk7fJz/n3J/ehmcSn2u/nsYnE2VSmF1NQ=
 			</data>
 		</dict>
 	</dict>
