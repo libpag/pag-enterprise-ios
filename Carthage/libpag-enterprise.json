@@ -1,4 +1,6 @@
 {
+  "4.4.20": "https://github.com/Tencent/libpag/releases/download/v4.4.20/libpag_enterprise_4.4.20_ios_arm64_x86_64.zip",
+  "4.4.20-movie": "https://github.com/Tencent/libpag/releases/download/v4.4.20/libpag_enterprise_4.4.20_ios_arm64_simulator_movie.zip",
   "4.4.15": "https://github.com/Tencent/libpag/releases/download/v4.4.15/libpag_enterprise_4.4.15_ios_arm64_x86_64.zip",
   "4.4.15-movie": "https://github.com/Tencent/libpag/releases/download/v4.4.15/libpag_enterprise_4.4.15_ios_arm64_simulator_movie.zip",
   "4.4.8": "https://github.com/Tencent/libpag/releases/download/v4.4.8/libpag_enterprise_4.4.8_ios_arm64_x86_64.zip",
