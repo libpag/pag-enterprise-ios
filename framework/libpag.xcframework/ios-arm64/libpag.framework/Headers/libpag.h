@@ -39,3 +39,9 @@
 #import <libpag/PAGVideoDecoder.h>
 #import <libpag/PAGVideoRange.h>
 #import <libpag/PAGView.h>
+#import <libpag/PAGLicenseManager.h>
+#import <libpag/PAGView+Audio.h>
+#import <libpag/PAGMovie.h>
+#import <libpag/PAGMovieExporter.h>
+#import <libpag/PAGAudioReader.h>
+#import <libpag/PAGAudioSample.h>
