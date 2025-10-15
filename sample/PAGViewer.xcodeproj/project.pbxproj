@@ -17,12 +17,11 @@
 		4DE99A5127BFC16F0003AA0A /* PAGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE99A4927BFC16F0003AA0A /* PAGPlayerView.m */; };
 		4DE99A5227BFC16F0003AA0A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DE99A4C27BFC16F0003AA0A /* ViewController.mm */; };
 		4DE99A5327BFC16F0003AA0A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DE99A4C27BFC16F0003AA0A /* ViewController.mm */; };
-		67008B5C29C45052006D9E96 /* 3D_BOX_encrypted.pag in Resources */ = {isa = PBXBuildFile; fileRef = 67008B5B29C45052006D9E96 /* 3D_BOX_encrypted.pag */; };
-		67B9AB6F29ADDEE4003F61E5 /* demo.license in Resources */ = {isa = PBXBuildFile; fileRef = 67B9AB6E29ADDEE4003F61E5 /* demo.license */; };
 		67B9AB7329ADEA44003F61E5 /* sizhi.pag in Resources */ = {isa = PBXBuildFile; fileRef = 67B9AB7229ADEA44003F61E5 /* sizhi.pag */; };
 		67B9AB7529ADEA48003F61E5 /* audio.pag in Resources */ = {isa = PBXBuildFile; fileRef = 67B9AB7429ADEA48003F61E5 /* audio.pag */; };
 		67B9AB7729ADF7EE003F61E5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B9AB7629ADF7EE003F61E5 /* MobileCoreServices.framework */; };
 		67B9AB7929ADFC2D003F61E5 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B9AB7829ADFC2D003F61E5 /* PhotosUI.framework */; };
+		855CAB922E9F3C7900645C82 /* 3D_BOX.pag in Resources */ = {isa = PBXBuildFile; fileRef = 855CAB912E9F3C7900645C82 /* 3D_BOX.pag */; };
 		A67EEDC5B348A2EAF72AF1B0 /* Pods_PAGViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AA3F93E9E00E33F9EB7662 /* Pods_PAGViewer.framework */; };
 		B64195FB0394E72A513295F3 /* Pods_PAGViewerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3047045721407A204D7C3BE1 /* Pods_PAGViewerTest.framework */; };
 		F2ED88A31FCBEDF100555707 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2ED88A21FCBEDF100555707 /* AppDelegate.mm */; };
@@ -57,15 +56,14 @@
 		4DE99A4D27BFC16F0003AA0A /* PAGPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAGPlayerView.h; sourceTree = "<group>"; };
 		52E388B434A077E5A9820A34 /* Pods-PAGViewer.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewer.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewer/Pods-PAGViewer.dailybuild.xcconfig"; sourceTree = "<group>"; };
 		5478FF75278EFE3700999C9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67008B5B29C45052006D9E96 /* 3D_BOX_encrypted.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3D_BOX_encrypted.pag; sourceTree = "<group>"; };
 		676EEF7C29B9BE1F00F01D7B /* ffmovie.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ffmovie.xcframework; path = ../vendor/ffmovie/ios/ffmovie.xcframework; sourceTree = "<group>"; };
-		67B9AB6E29ADDEE4003F61E5 /* demo.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.license; sourceTree = "<group>"; };
 		67B9AB7229ADEA44003F61E5 /* sizhi.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = sizhi.pag; sourceTree = "<group>"; };
 		67B9AB7429ADEA48003F61E5 /* audio.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio.pag; sourceTree = "<group>"; };
 		67B9AB7629ADF7EE003F61E5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		67B9AB7829ADFC2D003F61E5 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		6B2A288297268E24DCC4516D /* Pods-PAGViewerSlim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewerSlim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewerSlim/Pods-PAGViewerSlim.debug.xcconfig"; sourceTree = "<group>"; };
 		6C4102B884D6DDD8E3A0F534 /* Pods-PAGViewerTest.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewerTest.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewerTest/Pods-PAGViewerTest.dailybuild.xcconfig"; sourceTree = "<group>"; };
+		855CAB912E9F3C7900645C82 /* 3D_BOX.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3D_BOX.pag; sourceTree = "<group>"; };
 		98432DAA6D4ED2A49C4A7CF3 /* Pods-PAGViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewer/Pods-PAGViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		A8557BF7F6FC0F2EF35B7AF6 /* Pods-PAGViewerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAGViewerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PAGViewerTest/Pods-PAGViewerTest.release.xcconfig"; sourceTree = "<group>"; };
 		B1AA3F93E9E00E33F9EB7662 /* Pods_PAGViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PAGViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,9 +147,8 @@
 		67B9AB6D29ADDBEB003F61E5 /* asset */ = {
 			isa = PBXGroup;
 			children = (
-				67008B5B29C45052006D9E96 /* 3D_BOX_encrypted.pag */,
 				67B9AB7229ADEA44003F61E5 /* sizhi.pag */,
-				67B9AB6E29ADDEE4003F61E5 /* demo.license */,
+				855CAB912E9F3C7900645C82 /* 3D_BOX.pag */,
 				67B9AB7429ADEA48003F61E5 /* audio.pag */,
 			);
 			path = asset;
@@ -304,8 +301,7 @@
 				67B9AB7529ADEA48003F61E5 /* audio.pag in Resources */,
 				67B9AB7329ADEA44003F61E5 /* sizhi.pag in Resources */,
 				F2ED88A91FCBEDF100555707 /* Main.storyboard in Resources */,
-				67008B5C29C45052006D9E96 /* 3D_BOX_encrypted.pag in Resources */,
-				67B9AB6F29ADDEE4003F61E5 /* demo.license in Resources */,
+				855CAB922E9F3C7900645C82 /* 3D_BOX.pag in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +315,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PAGViewerTest/Pods-PAGViewerTest-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FFMovie/FFMovie.framework/FFMovie",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag/libpag.framework/libpag",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag-enterprise/FFMovie.framework/FFMovie",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag-enterprise/libpag.framework/libpag",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -383,8 +379,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PAGViewer/Pods-PAGViewer-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FFMovie/FFMovie.framework/FFMovie",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag/libpag.framework/libpag",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag-enterprise/FFMovie.framework/FFMovie",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag-enterprise/libpag.framework/libpag",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

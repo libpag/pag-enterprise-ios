@@ -40,11 +40,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.tintColor = [UIColor colorWithRed:0.00 green:0.35 blue:0.85 alpha:1.00];
-    self.pagFileNames = @[@"3D_BOX_encrypted.pag", @"audio.pag", @"sizhi.pag"];
+    self.pagFileNames = @[@"3D_BOX.pag", @"audio.pag", @"sizhi.pag"];
     // SDK鉴权
     [self initSDKAuth];
-    // 添加素材证书
-    [self initFileLicense];
     [self configView];
 }
 
@@ -55,19 +53,6 @@
     NSString *pagName = self.pagFileNames[self.pagFileSegmentedControl.selectedSegmentIndex];
     [self.playerView loadPAGAndPlay:pagName];
     [self.view insertSubview:self.playerView aboveSubview:self.bgView];
-}
-
-/**
-* 使用加密素材时需要添加素材证书，否则会解密失败
-*/
-- (void)initFileLicense {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"license"];
-    PAGLicenseResult result = [PAGLicenseManager AddFileLicense:path];
-    if (result == PAGLicenseResultSuccess) {
-        NSLog(@"Successfully added license.");
-    } else {
-        NSLog(@"Failed to add certificate. Path:%@", path);
-    }
 }
 
 - (IBAction)segementDidChange:(UISegmentedControl *)segment {
