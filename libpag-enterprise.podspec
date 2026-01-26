@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "libpag-enterprise"
-  spec.version  = '4.5.24-movie'
+  spec.version  = '4.5.24'
   spec.summary      = "libpag-enterprise."
 
   spec.homepage     = "https://github.com/libpag/pag-enterprise-ios"
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
 
   spec.frameworks = ['UIKit', 'CoreFoundation', 'QuartzCore', 'CoreGraphics', 'CoreText', 'OpenGLES', 'VideoToolbox', 'CoreMedia', 'AudioToolbox']
 
-  spec.vendored_frameworks = 'framework/*.xcframework'
+  spec.vendored_frameworks = 'framework/libpag.xcframework'
 
   spec.libraries = ["iconv", "compression"]
 
