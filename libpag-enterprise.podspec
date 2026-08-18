@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "libpag-enterprise"
-  spec.version  = '4.5.91'
+  spec.version  = '4.4.68'
   spec.summary      = "libpag-enterprise."
 
   spec.homepage     = "https://github.com/libpag/pag-enterprise-ios"
@@ -12,23 +12,12 @@ Pod::Spec.new do |spec|
 
   spec.frameworks = ['UIKit', 'CoreFoundation', 'QuartzCore', 'CoreGraphics', 'CoreText', 'OpenGLES', 'VideoToolbox', 'CoreMedia', 'AudioToolbox']
 
+  spec.vendored_frameworks = 'framework/libpag.xcframework'
+
   spec.libraries = ["iconv", "compression"]
 
   spec.xcconfig = {
    'VALID_ARCHS' =>  'arm64 x86_64'
   }
-
-  # 默认/常规版（不选 subspec 时）
-  spec.vendored_frameworks = 'framework/libpag.xcframework'
-
-  # 变体: movie（含 FFMovie）
-  spec.subspec 'Movie' do |m|
-    m.vendored_frameworks = ['framework/movie/libpag.xcframework', 'framework/movie/FFMovie.xcframework']
-  end
-
-  # 变体: noencrypt（无加密二进制）
-  spec.subspec 'NoEncrypt' do |ne|
-    ne.vendored_frameworks = 'framework/noencrypt/libpag.xcframework'
-  end
 
 end
