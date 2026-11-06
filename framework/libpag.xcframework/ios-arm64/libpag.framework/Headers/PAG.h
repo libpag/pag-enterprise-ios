@@ -2,7 +2,7 @@
 //
 //  Tencent is pleased to support the open source community by making libpag available.
 //
-//  Copyright (C) 2021 THL A29 Limited, a Tencent company. All rights reserved.
+//  Copyright (C) 2021 Tencent. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
 //  except in compliance with the License. You may obtain a copy of the License at
@@ -31,5 +31,16 @@ PAG_API @interface PAG : NSObject
  * Get SDK version information.
  */
 + (NSString*)SDKVersion;
+
+/**
+ * Sets whether the anonymous usage data reporting is enabled. It is recommended to call this
+ * method as early as possible, before any PAG content is loaded. The default value is YES.
+ */
++ (void)SetDataReportEnabled:(BOOL)value;
+/**
+ * Returns whether the anonymous usage data reporting is enabled. The default value is YES.
+ */
++ (BOOL)DataReportEnabled;
+
 
 @end
