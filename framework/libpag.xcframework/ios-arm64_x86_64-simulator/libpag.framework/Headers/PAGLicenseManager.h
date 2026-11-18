@@ -59,21 +59,6 @@ PAG_API @interface PAGLicenseManager : NSObject
 + (PAGLicenseResult)LoadSDKLicense:(void *)bytes size:(NSUInteger)size key:(NSString *)key appID:(NSString *)appID;
 
 
-/**
- * Add a license to the manager from the specified license path to decrypt the encrypted PAG file.
- * Return InvalidParameter if the file doesn't exist or the data aren't a valid license file or the
- * license is not used for the current application. Return LicenseExpired if the license has expired
- */
-+ (PAGLicenseResult)AddFileLicense:(NSString *)path;
-
-/**
- * Add a license to the manager from the specified license data to decrypt the encrypted PAG file.
- * Return InvalidParameter if the data are not a valid license file or the license is not used for
- * the current application, Return LicenseExpired if the license has expired.
- */
-+ (PAGLicenseResult)AddFileLicense:(const void*)bytes size:(size_t)length;
-
-
 + (NSString*)GetSDKExpiredDate;
 
 @end
